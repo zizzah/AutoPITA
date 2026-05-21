@@ -38,7 +38,7 @@ app = FastAPI(
 )
 
 
-app.add_exception_handler(AutoPITAException, autopita_exception_handler)
+app.add_exception_handler(AutoPITAException, autopita_exception_handler) # type: ignore
 app.include_router(api_router)
 
 
